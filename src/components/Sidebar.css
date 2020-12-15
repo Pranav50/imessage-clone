@@ -1,0 +1,120 @@
+.sidebar {
+    flex: 0.35;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid lightgray;
+    background-color: white;
+    overflow-y: auto;
+  }
+  
+  .sidebar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Handle */
+  .sidebar::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 8px;
+  }
+  
+  .sidebar__header {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .sidebar__avatar {
+    margin: 6px;
+    cursor: pointer;
+  }
+  
+  .sidebar__input {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex: 1;
+    background-color: #dfe6e9;
+    color: gray;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  
+  .sidebar__input>input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+  }
+
+  .sidebar__addChannelButton {  
+    background-color:  #dfe6e9;
+  }
+  
+  .sidebar__addChatModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar__addChatModalContainer {
+    background-color: white;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .sidebar__actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .comment-part {
+    margin-right: 0.6rem;
+  }
+  .signout-part {
+    margin-right: 0.6rem;
+  }
+  
+  .sidebar__actions button {
+    border: 1px solid transparent;
+  }
+  
+  .sidebar__addChatModalContainer button {
+    margin-top: 50px;
+    text-transform: inherit !important;
+    background-color: #dfe6e9;
+  }
+  
+  .sidebar__addChatModalContainer button:hover {
+    background-color: #dfe6e9;
+  }
+  
+  .sidebar__chats {
+    flex: 1;
+  }
+
+  @media (max-width: 856px) and (min-width: 250px) {
+    .sidebar__actions {
+      padding: 10px 24px;
+      cursor: pointer;
+      width: auto;
+      display: block;
+    }
+    .sidebar__actions button {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
